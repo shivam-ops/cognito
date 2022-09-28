@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          cognito:
+            clientId: 150b610o2irsk7fl4lgcbc10i9
+            clientSecret: 17tlv57ichc7u5tg5bevdb194r9jal5jknrqc5nmdqve2vl3k00s
+            scope: openid, email
+            redirectUriTemplate: http://localhost:8080/login/oauth2/code/cognito
+            clientName: spring-boot-backend
+        provider:
+          cognito:
+            issuerUri: https://cognito-idp.ap-northeast-1.amazonaws.com/ap-northeast-1_Pg4BFD50N
+
+cognito:
+  logoutUrl: https://protest.auth.ap-northeast-1.amazoncognito.com/logout
